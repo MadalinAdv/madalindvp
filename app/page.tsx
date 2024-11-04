@@ -4,8 +4,12 @@ import Hero from "@/components/Hero";
 import {FloatingDock} from "@/components/ui/FloatingDock"
 import { FaHome, FaCode, FaImages, FaPenAlt, FaProjectDiagram, FaUtensils, FaGithub } from 'react-icons/fa';
 import { FeaturesSectionDemo } from "@/components/ui/Featured"
+import {BentoGridThirdDemo} from "@/components/Grid";
+import { HeroParallax } from "@/components/ui/HeroParallax";
+import { parallaxItems } from "@/data";
 
 export default function Home() {
+  
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
@@ -22,7 +26,9 @@ export default function Home() {
           mobileClassName="fixed bottom-0 left-0 w-full z-50"
         />
         <Hero />
-        <FeaturesSectionDemo />
+        <HeroParallax products={parallaxItems} />
+        
+        
       </div>
 
     </main>
