@@ -2,10 +2,8 @@
 
 import Hero from "@/components/Hero";
 import {FloatingDock} from "@/components/ui/FloatingDock"
-import { navItems } from "@/data/index";
-
 import { FaHome, FaCode, FaImages, FaPenAlt, FaProjectDiagram, FaUtensils, FaGithub } from 'react-icons/fa';
-
+import { FeaturesSectionDemo } from "@/components/ui/Featured"
 
 export default function Home() {
   return (
@@ -24,6 +22,7 @@ export default function Home() {
           mobileClassName="fixed bottom-0 left-0 w-full z-50"
         />
         <Hero />
+        <FeaturesSectionDemo />
       </div>
 
     </main>
